@@ -40,10 +40,6 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
-main {
-    min-height: 100dvh;
-}
-
 ul {
     list-style: none;
 }
@@ -59,11 +55,14 @@ a {
 }
 
 header,
-.hero,
-footer {
+.hero {
     padding: 2em;
     max-width: 80rem;
     margin-inline: auto;
+}
+
+footer {
+    padding: .5em 2em;
 }
 
 .hero {
@@ -124,21 +123,46 @@ footer {
     -o-border-radius: 50%;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
+    body {
+        background-image: url("./images/bg-mobile.svg");
+        background-size: contain;
+    }
+
+    .header__logo-container svg {
+        height: 40px;
+        width: unset;
+    }
+
     .hero {
         flex-direction: column;
+        gap: 3.5em;
     }
 
     .hero__content {
         padding: 0;
         text-align: center;
+        gap: 1.2em;
+    }
+
+    .hero__title {
+        font-size: 1.5em;
     }
 
     .hero__button {
         align-self: center;
+        padding: .6em 4.5em;
     }
 
     .social-list {
         justify-content: center;
+    }
+
+    .social-link {
+        padding: .4em;
+    }
+
+    .social-link svg {
+        height: 18px;
     }
 }
