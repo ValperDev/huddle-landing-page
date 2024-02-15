@@ -104,6 +104,16 @@ footer {
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
     padding: .8em 3.5em;
+    transition: color 150ms ease-in-out, background-color 150ms ease-in-out;
+    -webkit-transition: color 150ms ease-in-out, background-color 150ms ease-in-out;
+    -moz-transition: color 150ms ease-in-out, background-color 150ms ease-in-out;
+    -ms-transition: color 150ms ease-in-out, background-color 150ms ease-in-out;
+    -o-transition: color 150ms ease-in-out, background-color 150ms ease-in-out;
+}
+
+.hero__button:hover {
+    background-color: var(--soft-magenta);
+    color: var(--white);
 }
 
 .social-list {
@@ -121,6 +131,31 @@ footer {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    transition: border-color 150ms ease-in-out;
+    -webkit-transition: border-color 150ms ease-in-out;
+    -moz-transition: border-color 150ms ease-in-out;
+    -ms-transition: border-color 150ms ease-in-out;
+    -o-transition: border-color 150ms ease-in-out;
+}
+
+.social-link:hover {
+    border-color: var(--soft-magenta);
+}
+
+.social-link path {
+    transition: stroke 150ms ease-in-out, fill 150ms ease-in-out;
+    -webkit-transition: stroke 150ms ease-in-out, fill 150ms ease-in-out;
+    -moz-transition: stroke 150ms ease-in-out, fill 150ms ease-in-out;
+    -ms-transition: stroke 150ms ease-in-out, fill 150ms ease-in-out;
+    -o-transition: stroke 150ms ease-in-out, fill 150ms ease-in-out;
+}
+
+.social-link:hover path {
+    fill: var(--soft-magenta);
+}
+
+.social-link.social-link--instagram:hover path {
+    stroke: var(--soft-magenta);
 }
 
 @media only screen and (max-width: 800px) {
